@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug chat-with-assistant" type="NodeJSConfigurationType" node-parameters="-r ts-node/register" path-to-js-file="$PROJECT_DIR$/src/chat-with-assistant.ts" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="TS_NODE_FILES" value="true" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>

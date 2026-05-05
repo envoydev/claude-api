@@ -1,0 +1,94 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Prompt Evaluation Report</title>
+      <style>
+          body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; color: #333; }
+          .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+          .summary-stats { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+          .stat-box { background-color: #fff; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex-basis: 30%; min-width: 200px; }
+          .stat-value { font-size: 24px; font-weight: bold; margin-top: 5px; }
+          table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+          th { background-color: #4a4a4a; color: white; text-align: left; padding: 12px; }
+          td { padding: 10px; border-bottom: 1px solid #ddd; vertical-align: top; width: 20%; }
+          tr:nth-child(even) { background-color: #f9f9f9; }
+          .score { font-weight: bold; padding: 5px 10px; border-radius: 3px; display: inline-block; }
+          .score-high { background-color: #c8e6c9; color: #2e7d32; }
+          .score-medium { background-color: #fff9c4; color: #f57f17; }
+          .score-low { background-color: #ffcdd2; color: #c62828; }
+          .score-col { width: 80px; }
+          .output pre { background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; padding: 10px; margin: 0; font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 14px; line-height: 1.4; color: #333; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; }
+      </style>
+  </head>
+  <body>
+      <div class="header">
+          <h1>Prompt Evaluation Report</h1>
+          <div class="summary-stats">
+              <div class="stat-box">
+                  <div>Total Test Cases</div>
+                  <div class="stat-value">3</div>
+              </div>
+              <div class="stat-box">
+                  <div>Average Score</div>
+                  <div class="stat-value">8.0 / 10</div>
+              </div>
+              <div class="stat-box">
+                  <div>Pass Rate (>=7)</div>
+                  <div class="stat-value">100.0%</div>
+              </div>
+          </div>
+      </div>
+      <table>
+          <thead>
+              <tr>
+                  <th>Scenario</th>
+                  <th>Prompt Inputs</th>
+                  <th>Solution Criteria</th>
+                  <th>Output</th>
+                  <th>Score</th>
+                  <th>Reasoning</th>
+              </tr>
+          </thead>
+          <tbody>
+  
+          <tr>
+              <td>Testing with interdisciplinary content containing overlapping topics from multiple fields (e.g., neuroscience, psychology, and philosophy) to verify accurate extraction of distinct yet related concepts</td>
+              <td class="prompt-inputs"><strong>content:</strong> Recent advances in cognitive neuroscience have illuminated the neural correlates of consciousness, revealing how subjective phenomenal experience emerges from distributed brain networks. This interdisciplinary intersection of neuroscience, philosophy of mind, and experimental psychology has challenged traditional dualist assumptions about the mind-body problem. Neuroimaging studies utilizing fMRI and EEG technologies demonstrate that conscious awareness correlates with synchronized activity across prefrontal and parietal regions, while simultaneously raising epistemological questions about the explanatory gap between physical brain states and qualitative experience. Furthermore, the integration of computational modeling with behavioral psychology suggests that metacognition—the ability to reflect upon one's own mental processes—may depend on recursive neural feedback loops that distinguish human consciousness from other animal cognition. These findings have profound implications for understanding attention, self-awareness, and the neural mechanisms underlying emotional regulation.</td>
+              <td class="criteria">• Extracted topics must include distinct concepts from neuroscience (e.g., neural correlates, brain networks, fMRI, EEG), philosophy (e.g., consciousness, mind-body problem, phenomenal experience), and psychology (e.g., metacognition, attention, emotional regulation)<br>• Related or overlapping topics must be recognized as separate entries (e.g., 'consciousness' and 'phenomenal experience' should both appear, as should 'neural correlates of consciousness' or similar variants)<br>• Output must be a valid JSON array of strings with no duplicates and no extraneous formatting</td>
+              <td class="output"><pre>
+["consciousness", "neural correlates of consciousness", "phenomenal experience", "cognitive neuroscience", "neuroscience", "philosophy of mind", "mind-body problem", "fMRI", "EEG", "neuroimaging", "prefrontal cortex", "parietal cortex", "explanatory gap", "metacognition", "computational modeling", "attention", "self-awareness", "emotional regulation"]
+</pre></td>
+              <td class="score-col"><span class="score score-high">8</span></td>
+              <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings with no duplicates, contains only topic names without commentary, and includes no extraneous formatting. It successfully extracts topics from all three required domains and recognizes overlapping concepts as separate entries. However, it has minor omissions of explicitly mentioned topics ('brain networks' and 'behavioral psychology') and one minor inference ('cortex' terminology). These are secondary criterion issues that do not violate mandatory requirements.</td>
+          </tr>
+    
+          <tr>
+              <td>Testing with a passage containing implicit and subtle topics that require inference rather than explicit keyword matching, such as methodological approaches or theoretical frameworks not directly named</td>
+              <td class="prompt-inputs"><strong>content:</strong> This study employs a mixed-methods design combining semi-structured interviews with network analysis to examine knowledge transfer mechanisms within collaborative research ecosystems. Drawing on social capital theory and utilizing grounded theory for qualitative data analysis, we investigated how institutional structures mediate the flow of tacit knowledge among interdisciplinary teams. Our approach integrates quantitative metrics of collaboration intensity with qualitative insights about trust-building processes, leveraging both deductive hypothesis testing and inductive pattern recognition. The research positions itself within the interpretivist paradigm while maintaining positivist elements through triangulation of data sources.</td>
+              <td class="criteria">• Must identify implicit methodological approaches (e.g., 'mixed-methods design', 'grounded theory', 'network analysis', 'triangulation') not simply as keywords but as recognized research methods<br>• Must recognize theoretical frameworks referenced indirectly or by name (e.g., 'social capital theory', 'interpretivist paradigm') as distinct topics<br>• Must infer conceptual topics from context clues (e.g., 'knowledge transfer', 'tacit knowledge', 'trust-building') even when not explicitly listed as main topics<br>• Output must be a valid JSON array of strings with 6-9 distinct topic entries that demonstrate inference beyond surface-level keyword extraction</td>
+              <td class="output"><pre>
+["mixed-methods design", "semi-structured interviews", "network analysis", "knowledge transfer", "collaborative research ecosystems", "social capital theory", "grounded theory", "tacit knowledge", "institutional structures", "interdisciplinary teams", "trust-building processes", "triangulation", "interpretivist paradigm", "positivist methodology"]
+</pre></td>
+              <td class="score-col"><span class="score score-medium">7</span></td>
+              <td class="reasoning">The solution meets all three mandatory requirements: it is a valid JSON array of strings, contains topics without commentary, and includes only the JSON array. It demonstrates strong recognition of methodological approaches and theoretical frameworks as required by secondary criteria. However, it exceeds the 6-9 topic range with 14 entries, which violates the secondary criteria specification. The extraction is thorough but somewhat over-inclusive, including both explicit and implicit topics without clear prioritization. The solution shows good inference capability (tacit knowledge, trust-building processes, institutional structures) but could have been more selective to meet the specified range.</td>
+          </tr>
+    
+          <tr>
+              <td>Testing with domain-specific jargon and acronyms from a specialized field (e.g., molecular biology or quantum physics) to ensure proper topic identification despite technical terminology density</td>
+              <td class="prompt-inputs"><strong>content:</strong> CRISPR-Cas9 gene editing has revolutionized molecular biology by enabling precise modifications to genomic DNA sequences. Recent advances in base editing and prime editing technologies have overcome previous limitations of double-strand break (DSB) repair mechanisms. The off-target effects associated with sgRNA binding can be mitigated through improved gRNA design and the use of high-fidelity Cas9 variants. Furthermore, the delivery of ribonucleoprotein (RNP) complexes into mammalian cells has proven more efficient than traditional plasmid-based transfection methods. Applications in treating monogenic disorders such as sickle cell disease and β-thalassemia demonstrate the therapeutic potential of CRISPR-based interventions, though immunogenicity concerns and the blood-brain barrier (BBB) remain significant challenges for systemic administration.</td>
+              <td class="criteria">• Must extract at least 8 distinct topics/concepts from the passage into a JSON array format<br>• Must correctly identify domain-specific terms and acronyms (e.g., CRISPR-Cas9, DSB, sgRNA, RNP, BBB) as valid topics<br>• Topics should represent key concepts, technologies, challenges, or applications mentioned in the text<br>• Output must be valid JSON with proper string array formatting</td>
+              <td class="output"><pre>
+["CRISPR-Cas9", "gene editing", "base editing", "prime editing", "double-strand break repair", "off-target effects", "sgRNA", "gRNA design", "high-fidelity Cas9 variants", "ribonucleoprotein complexes", "plasmid-based transfection", "sickle cell disease", "β-thalassemia", "immunogenicity", "blood-brain barrier", "genomic DNA modification", "monogenic disorders"]
+</pre></td>
+              <td class="score-col"><span class="score score-high">9</span></td>
+              <td class="reasoning">The solution meets all mandatory requirements: it contains a valid JSON array of strings with topics only (no extra commentary), and the response contains only the JSON array. It exceeds the minimum of 8 topics with 17 entries. The solution correctly identifies domain-specific terminology and acronyms as valid topics and represents key concepts, technologies, challenges, and applications from the passage. The only minor issue is one inferred topic ('genomic DNA modification') rather than directly extracted, but this is a very minor deviation that doesn't violate core requirements.</td>
+          </tr>
+    
+          </tbody>
+      </table>
+  </body>
+  </html>
+  

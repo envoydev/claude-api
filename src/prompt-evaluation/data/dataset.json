@@ -1,0 +1,40 @@
+[
+  {
+    "promptInputs": {
+      "content": "Recent advances in cognitive neuroscience have illuminated the neural correlates of consciousness, revealing how subjective phenomenal experience emerges from distributed brain networks. This interdisciplinary intersection of neuroscience, philosophy of mind, and experimental psychology has challenged traditional dualist assumptions about the mind-body problem. Neuroimaging studies utilizing fMRI and EEG technologies demonstrate that conscious awareness correlates with synchronized activity across prefrontal and parietal regions, while simultaneously raising epistemological questions about the explanatory gap between physical brain states and qualitative experience. Furthermore, the integration of computational modeling with behavioral psychology suggests that metacognition—the ability to reflect upon one's own mental processes—may depend on recursive neural feedback loops that distinguish human consciousness from other animal cognition. These findings have profound implications for understanding attention, self-awareness, and the neural mechanisms underlying emotional regulation."
+    },
+    "solutionCriteria": [
+      "Extracted topics must include distinct concepts from neuroscience (e.g., neural correlates, brain networks, fMRI, EEG), philosophy (e.g., consciousness, mind-body problem, phenomenal experience), and psychology (e.g., metacognition, attention, emotional regulation)",
+      "Related or overlapping topics must be recognized as separate entries (e.g., 'consciousness' and 'phenomenal experience' should both appear, as should 'neural correlates of consciousness' or similar variants)",
+      "Output must be a valid JSON array of strings with no duplicates and no extraneous formatting"
+    ],
+    "taskDescription": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with interdisciplinary content containing overlapping topics from multiple fields (e.g., neuroscience, psychology, and philosophy) to verify accurate extraction of distinct yet related concepts"
+  },
+  {
+    "promptInputs": {
+      "content": "This study employs a mixed-methods design combining semi-structured interviews with network analysis to examine knowledge transfer mechanisms within collaborative research ecosystems. Drawing on social capital theory and utilizing grounded theory for qualitative data analysis, we investigated how institutional structures mediate the flow of tacit knowledge among interdisciplinary teams. Our approach integrates quantitative metrics of collaboration intensity with qualitative insights about trust-building processes, leveraging both deductive hypothesis testing and inductive pattern recognition. The research positions itself within the interpretivist paradigm while maintaining positivist elements through triangulation of data sources."
+    },
+    "solutionCriteria": [
+      "Must identify implicit methodological approaches (e.g., 'mixed-methods design', 'grounded theory', 'network analysis', 'triangulation') not simply as keywords but as recognized research methods",
+      "Must recognize theoretical frameworks referenced indirectly or by name (e.g., 'social capital theory', 'interpretivist paradigm') as distinct topics",
+      "Must infer conceptual topics from context clues (e.g., 'knowledge transfer', 'tacit knowledge', 'trust-building') even when not explicitly listed as main topics",
+      "Output must be a valid JSON array of strings with 6-9 distinct topic entries that demonstrate inference beyond surface-level keyword extraction"
+    ],
+    "taskDescription": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit and subtle topics that require inference rather than explicit keyword matching, such as methodological approaches or theoretical frameworks not directly named"
+  },
+  {
+    "promptInputs": {
+      "content": "CRISPR-Cas9 gene editing has revolutionized molecular biology by enabling precise modifications to genomic DNA sequences. Recent advances in base editing and prime editing technologies have overcome previous limitations of double-strand break (DSB) repair mechanisms. The off-target effects associated with sgRNA binding can be mitigated through improved gRNA design and the use of high-fidelity Cas9 variants. Furthermore, the delivery of ribonucleoprotein (RNP) complexes into mammalian cells has proven more efficient than traditional plasmid-based transfection methods. Applications in treating monogenic disorders such as sickle cell disease and β-thalassemia demonstrate the therapeutic potential of CRISPR-based interventions, though immunogenicity concerns and the blood-brain barrier (BBB) remain significant challenges for systemic administration."
+    },
+    "solutionCriteria": [
+      "Must extract at least 8 distinct topics/concepts from the passage into a JSON array format",
+      "Must correctly identify domain-specific terms and acronyms (e.g., CRISPR-Cas9, DSB, sgRNA, RNP, BBB) as valid topics",
+      "Topics should represent key concepts, technologies, challenges, or applications mentioned in the text",
+      "Output must be valid JSON with proper string array formatting"
+    ],
+    "taskDescription": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with domain-specific jargon and acronyms from a specialized field (e.g., molecular biology or quantum physics) to ensure proper topic identification despite technical terminology density"
+  }
+]

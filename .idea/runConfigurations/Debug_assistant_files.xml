@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug assistant-files" type="NodeJSConfigurationType" application-parameters="--evaluate" node-parameters="-r ts-node/register" path-to-js-file="$PROJECT_DIR$/src/assistant-files.ts" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="TS_NODE_FILES" value="true" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="695f8e76-9c0a-4b72-bc9e-d190f00e9ba7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/calude-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_assistant_files.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_assistant_rag.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_assistant_tool_v1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_assistant_tool_v2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_assistant_tool_v3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_chat_with_assistant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_prompt_caching.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_prompt_evaluation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_rag_feature.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluetion_promt.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant-files.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant-tools-v1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant-tools-v2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant-tools-v3.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant/ai-assistant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assistant/ai-assistant.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chat-with-assistant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/documents/earth.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/documents/streaming.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/images/prop7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/rag/report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/tool-test-files/.backups/main.ts.1776600040" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/tool-test-files/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/file-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/rag-tools.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/batch-tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/code-execution-tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/db-query.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/duration-to-datetime.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/get-current-datetime.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/save-article.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/set-reminder.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/text-editor/text-editor.tool-schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/text-editor/text-editor.tool-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/text-editor/text-editor.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/tools-invoker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/tools/web-search.tool.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/others/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-caching.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/data/dataset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/data/output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/data/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/prompt-evaluation-generate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/prompt-evaluation-run.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/report-builder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prompt-evaluation/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rag-feature.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/bm-25-index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/bm-25-index.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/retriever.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/store.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/vector-index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/vector-index.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/voyager/voyager-client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "envoydev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:envoydev/claude-api.git",
+    "accountId": "a11db3ae-5fa1-4073-848a-5555098276a4"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3C2LvcYLQ6LRLwyGGR5C83Qnl9a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.Debug assistant-files.executor": "Debug",
+    "Node.js.Debug assistant-rag.executor": "Debug",
+    "Node.js.Debug assistant-reminder.executor": "Debug",
+    "Node.js.Debug assistant-tool-v1.executor": "Debug",
+    "Node.js.Debug assistant-tool-v3.executor": "Debug",
+    "Node.js.Debug chat-with-assistant.executor": "Debug",
+    "Node.js.Debug prompt-caching.executor": "Debug",
+    "Node.js.Debug run-prompt-evaluation.executor": "Debug",
+    "Node.js.Debug test-case-generator.executor": "Debug",
+    "Node.js.Debug test-case.executor": "Debug",
+    "Node.js.ai-assistant.ts.executor": "Debug",
+    "Node.js.index.ts.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/mac/Programming/Learning/claude-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/runConfigurations" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/prompt-evaluation/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/helpers/documents" />
+      <recent name="$PROJECT_DIR$/src/helpers/images" />
+      <recent name="$PROJECT_DIR$/src/stores" />
+      <recent name="$PROJECT_DIR$/src/helpers" />
+      <recent name="$PROJECT_DIR$/src/rag" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.Debug assistant-files" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="695f8e76-9c0a-4b72-bc9e-d190f00e9ba7" name="Changes" comment="" />
+      <created>1775578950473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775578950473</updated>
+      <workItem from="1775578951570" duration="1249000" />
+      <workItem from="1775580450939" duration="14908000" />
+      <workItem from="1775630154424" duration="9750000" />
+      <workItem from="1775894226401" duration="2917000" />
+      <workItem from="1775920941253" duration="7907000" />
+      <workItem from="1776110127570" duration="2905000" />
+      <workItem from="1776500936790" duration="26480000" />
+      <workItem from="1776699494447" duration="17000" />
+      <workItem from="1776699531457" duration="5492000" />
+      <workItem from="1777375805136" duration="18500000" />
+      <workItem from="1777562274304" duration="7197000" />
+      <workItem from="1777628368283" duration="11000" />
+      <workItem from="1777910454738" duration="6641000" />
+      <workItem from="1777919655752" duration="1680000" />
+      <workItem from="1777923201104" duration="20000" />
+      <workItem from="1778001019401" duration="1031000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/others/tools/tools-invoker.ts</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/assistant-files.ts</url>
+          <line>44</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/assistant-files.ts</url>
+          <line>62</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/assistant-files.ts</url>
+          <line>91</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/prompt-caching.ts</url>
+          <line>221</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/assistant/ai-assistant.ts</url>
+          <line>117</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/assistant-files.ts</url>
+          <line>150</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
